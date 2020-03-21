@@ -20,6 +20,7 @@ const uglify = require("gulp-uglify");
 const zip = require("gulp-vinyl-zip");
 const sass = require("gulp-sass");
 const autoprefixer = require("gulp-autoprefixer");
+const imgCompress = require('imagemin-jpeg-recompress');
 
 /* -------------------------------------------------------------------------------------------------
 Theme Name
@@ -286,9 +287,17 @@ function processImages() {
 	return src("./src/assets/img/**")
 		.pipe(plumber({ errorHandler: onError }))
 		.pipe(
-			imagemin([imagemin.svgo({ plugins: [{ removeViewBox: true }] })], {
-				verbose: true
-			})
+			imagemin([
+				imgCompress({
+					loops: 4,
+					min: 70,
+					max: 80,
+					quality: 'high'
+				}),
+				imagemin.gifsicle(),
+				imagemin.optipng(),
+				imagemin.svgo()
+			])
 		)
 		.pipe(dest("./dist/themes/" + themeName + "/img"));
 }
