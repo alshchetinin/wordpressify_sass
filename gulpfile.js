@@ -21,6 +21,7 @@ const zip = require("gulp-vinyl-zip");
 const sass = require("gulp-sass");
 const autoprefixer = require("gulp-autoprefixer");
 const imgCompress = require('imagemin-jpeg-recompress');
+const imageminPngquant = require('imagemin-pngquant');
 
 /* -------------------------------------------------------------------------------------------------
 Theme Name
@@ -295,7 +296,7 @@ function processImages() {
 					quality: 'high'
 				}),
 				imagemin.gifsicle(),
-				imagemin.optipng(),
+				imageminPngquant({ quality: [0.8, 0.9] }),
 				imagemin.svgo()
 			])
 		)

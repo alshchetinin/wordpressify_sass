@@ -70,6 +70,7 @@
 		"bootstrap": "^4.4.1",
 		"gulp-autoprefixer": "^7.0.1",
 		"gulp-sass": "^4.0.2",
-		"imagemin-jpeg-recompress": "^6.0.0"
+		"imagemin-jpeg-recompress": "^6.0.0",
+		"imagemin-pngquant": "^8.0.0"
 	}
 }
