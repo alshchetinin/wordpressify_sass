@@ -1,16 +1,13 @@
  /*
- Theme Name: WordPressify
- Theme URI: https://www.wordpressify.co
+ Theme Name: TM WP
  Author: Alexandr Schetinin
- Author URI: https://www.bristel.com
- Description: WordPressify official theme.
+ Author URI: https://www.bristl.com
  Version: 1.0
- Tags: responsive, clean, minimal, modern, documentation
  */
 
 @import 'vars'
 @import '../../../node_modules/bootstrap/scss/bootstrap-reboot.scss'
-// @import '../../../node_modules/bootstrap/scss/bootstrap-grid.scss'
+@import '../../../node_modules/bootstrap/scss/bootstrap-grid.scss'
 
 ::placeholder
    color: $gray
@@ -18,6 +15,13 @@
 ::selection
    background-color: $accent_color
    color: #fff
+
+.img-responsive
+   display: block
+   max-width: 100%
+   height: auto
+   &.img-width
+      width: 100%
 
 input, textarea
    outline: none

@@ -6,6 +6,5 @@
 		<h2><?php bloginfo('name')?></h2>
 	</div>
 
-</div>
 
 <?php get_footer(); ?>
