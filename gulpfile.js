@@ -315,7 +315,6 @@ function zipProd() {
 }
 
 exports.prod = series(
-	cleanProd,
 	copyThemeProd,
 	copyFontsProd,
 	stylesProd,
