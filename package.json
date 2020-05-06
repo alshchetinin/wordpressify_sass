@@ -60,6 +60,7 @@
 		"gulp-sourcemaps": "^2.6.5",
 		"gulp-uglify": "^3.0.2",
 		"gulp-vinyl-zip": "^2.2.0",
+		"gutenberg-web-type": "^1.2.3",
 		"jquery": "^3.4.1",
 		"postcss-easy-import": "^3.0.0",
 		"postcss-mixins": "^6.2.3",
@@ -71,6 +72,8 @@
 		"gulp-autoprefixer": "^7.0.1",
 		"gulp-sass": "^4.0.2",
 		"imagemin-jpeg-recompress": "^6.0.0",
-		"imagemin-pngquant": "^8.0.0"
+		"imagemin-pngquant": "^8.0.0",
+		"normalize.css": "^8.0.1",
+		"smart-grid": "^2.1.2"
 	}
 }
