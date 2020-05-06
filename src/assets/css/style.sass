@@ -6,8 +6,8 @@
  */
 
 @import 'vars'
-@import '../../../node_modules/bootstrap/scss/bootstrap-reboot.scss'
-@import '../../../node_modules/bootstrap/scss/bootstrap-grid.scss'
+@import 'helpers/smart-grid'
+@import 'helpers/normalize'
 
 ::placeholder
    color: $gray
@@ -15,13 +15,6 @@
 ::selection
    background-color: $accent_color
    color: #fff
-
-.img-responsive
-   display: block
-   max-width: 100%
-   height: auto
-   &.img-width
-      width: 100%
 
 input, textarea
    outline: none
@@ -38,3 +31,6 @@ body
    line-height: 1.65
    overflow-x: hidden
    color: $text_color
+
+.wrapper
+   +wrapper()
