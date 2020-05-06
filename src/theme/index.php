@@ -1,10 +1,10 @@
 <?php get_header(); ?>
 
-<div class="container">	
-	
-	<div class="site-content">
-		<h2><?php bloginfo('name')?></h2>
-	</div>
+<div class="wrapper">
+
+   <div class="site-content">
+      <h2><?php bloginfo('name')?></h2>
+   </div>
 
 
-<?php get_footer(); ?>
+   <?php get_footer(); ?>
